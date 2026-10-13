@@ -70,3 +70,23 @@ if opcion == "1":
     agregar_gasto()
 elif opcion == "2":
     ver_gastos()
+
+def menu():
+    while True:
+        print("\n--- Registro de gastos ---")
+        print("1. Agregar gasto")
+        print("2. Ver gastos")
+        print("3. Salir")
+        opcion = input("Elige una opción: ")
+
+        if opcion == "1":
+            agregar_gasto()
+        elif opcion == "2":
+            ver_gastos()
+        elif opcion == "3":
+            print("Hasta luego")
+            break
+        else:
+            print("Opción no válida")
+
+menu()
